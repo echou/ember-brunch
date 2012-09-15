@@ -26,6 +26,7 @@ exports.config =
                 before: [
                     'vendor/styles/bootstrap.min.css'
                     'vendor/styles/font-awesome.css'
+                    'app/styles/app.less'
                 ]
         templates:
             precompile: true

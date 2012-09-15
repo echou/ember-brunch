@@ -20,7 +20,6 @@ App.addRoutes
     goHome: Em.Route.transitionTo 'root.index'
     gotoMain: Em.Route.transitionTo 'main'
 
-
     index: Em.Route.extend
         route: '/'
         redirectsTo: 'main'
