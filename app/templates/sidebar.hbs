@@ -1,0 +1,11 @@
+<div class="well">
+    <ui class="nav nav-list">
+        <li class="nav-header">侧边栏</li>
+        {{#each controller}}
+        {{#view tagName="li" classBinding="active:active"}}
+        <a {{action clickSidebar this}} href="#">
+            {{icon "cloud"}} {{name}} {{badge num}}</a>
+        {{/view}}
+        {{/each}}
+    </ui>
+</div>

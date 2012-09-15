@@ -1,0 +1,11 @@
+<ul class="breadcrumb">
+    <li><i class="icon-cloud"></i> 位置：</li>
+    <li><a {{action goHome}}>Home</a></li>
+    {{#each controller}}
+    <li><span class="divider">/</span></li>
+    {{#view tagName="li" classBinding="active:active"}}
+    {{this.contentIndex}}
+    {{#view tagName="a"}}{{name}}{{/view}}
+    {{/view}}
+    {{/each}}
+</ul>

@@ -1,0 +1,1 @@
+### Brunch with EmberJS, Bootstrap, LESS, Jade and CoffeeScript
