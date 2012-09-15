@@ -1,8 +1,6 @@
 App = require('app')
 Em = App.Ember
 
-require('templates/main')
-
 App.reopen
     MainController: Em.ObjectController.extend
         content: Em.Object.create()

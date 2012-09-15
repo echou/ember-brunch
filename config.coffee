@@ -7,7 +7,7 @@ exports.config =
 
     files:
         javascripts:
-            defaultExtension: 'js'
+            defaultExtension: 'coffee'
             joinTo:
                 'app.js': /^app/
                 'vendor.js': /^vendor/

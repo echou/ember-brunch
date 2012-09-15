@@ -1,7 +1,6 @@
 App = require('app')
 Em = App.Ember
 
-require('templates/sub')
 App.reopen
     SubController: Em.ObjectController.extend
         content: Em.Object.create()

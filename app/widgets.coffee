@@ -169,7 +169,6 @@ modalPaneTemplate = [
 ].join("\n")
 
 modalPaneBackdrop = '<div class="modal-backdrop"></div>'
-;
 
 ModalPane = Ember.View.extend
     classNames: ['modal']
@@ -225,7 +224,7 @@ ModalPane = Ember.View.extend
 ModalPane.reopenClass
     popup: (options) ->
         if not options then options = {}
-        modalPane = @create(options);
+        modalPane = @create(options)
         modalPane.append()
         modalPane
 exports.ModalPane = ModalPane
@@ -234,7 +233,7 @@ exports.Alert = (title, message) ->
     ModalPane.popup
         heading: title
         message: message
-        primary: "关闭"
+        primary: "Close"
         showBackdrop: false
 
 exports.ProgressBar = Em.View.extend
@@ -249,11 +248,6 @@ exports.ProgressBar = Em.View.extend
         console.log "progress #{progress}"
         "width:#{progress}%;"
     ).property("progress").cacheable()
-
-    didInsertElement: ->
-        #            style = @get('style')
-        #            console.log "progress #{style}"
-        true
 
 exports.HoverButton = Em.View.extend
     tagName: 'button'

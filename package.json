@@ -1,7 +1,7 @@
 {
-    "author": "echouzhou",
-    "name": "yunapp_oss",
-    "description": "内部云应用OSS",
+    "author": "echou327",
+    "name": "ember-brunch",
+    "description": "Ember brunch demo app",
     "version": "0.0.1",
     "homepage": "",
     "repository": {
@@ -21,6 +21,7 @@
         "clean-css-brunch": ">= 1.0 < 1.5",
         "less-brunch": ">=1.0 < 1.5",
         "coffee-script-brunch": ">=1.0 <1.5",
+        "jade-brunch": "> 1.0 < 1.5",
         "ember-handlebars-brunch": "https://github.com/icholy/ember-handlebars-brunch/tarball/master"
     }
 }

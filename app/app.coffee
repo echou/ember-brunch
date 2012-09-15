@@ -1,5 +1,3 @@
-jq = $.noConflict(true)
-
 get = Em.get
 set = Em.set
 
@@ -11,7 +9,7 @@ RootRoute = Em.Route.extend
         r.transitionTo e.context
 
     navigateAway: (r) ->
-        # 初始化全局的outlets
+        # initialize layouted outlets
         c = r.applicationController
         if r.get('sidebarController')?
             c.connectOutlet 'sidebar', 'sidebar'
@@ -20,11 +18,9 @@ RootRoute = Em.Route.extend
         if r.get('noticeController')?
             c.connectOutlet 'notice', 'notice'
 
-# 主程序
-
-
+# Application
 App = Ember.Application.create()
-App.$ = App.jQuery = jq
+App.$ = App.jQuery = require('lib/jquery')
 App.Em = App.Ember = Ember
 App.addRoutes = (opts) -> RootRoute.reopen(opts)
 App.addMVCs = (opts) -> App.reopen(opts)
